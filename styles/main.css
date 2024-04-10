@@ -1,0 +1,65 @@
+.corpo {
+   margin: 32px;
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.menu {
+   width: 200px;
+}
+
+.menu__title {
+   font-size: 12px;
+   font-weight: 400;
+   padding: 8px 0;
+}
+
+.menu__lista__item {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   padding: 8px 0;
+}
+
+.menu__lista__item__text {
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.menu__lista__item-comunidade {
+   opacity: 56%;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.principal {
+   min-height: 50vh;
+   width: 688px;
+   background-color: var(--code-area-color);
+   border-radius: 5px;
+   border: solid 32px var(--fourth-color);
+   padding: 16px;
+}
+
+.seu-projeto {
+   height: 50vh;
+   width: 200px;
+
+}
+
+
+@media (max-width: 992px) {
+
+
+
+}
+
+@media (max-width: 560px) {
+
+
+
+}
