@@ -24,7 +24,7 @@
    <main class="corpo">
 
       <section class="menu">
-         <h2 class="menu__title">M E N U</h2>
+         <h2 class="menu__title">MENU</h2>
          <ul class="menu__lista">
             <li class="menu__lista__item menu__lista__item-editor">
                <a class="menu__lista__item__icon" href="#"><img src="assets/img/menu__lista__icon1.png" alt="Ícone Editor de Código"></a>
@@ -37,16 +37,54 @@
          </ul>
       </section>
 
-      <section class="principal">
-         <div class="principal__code-area">
-            <input type="text">
+      <section class="container-principal">
+         <div class="principal">
+            <div class="principal__code-area">
+               <img class="principal__code-area__mac-buttons" src="assets/img/mac_buttons.png" alt="Mac-buttons"><br>
+               <textarea class="principal__code-area__text" placeholder="Digite seu texto aqui..."></textarea>
+            </div>
          </div>
+         <button class="principal__btn-highlight" href="#">Visualizar com o highlight</button>
       </section>
 
-      <section class="seu-projeto">
-         <h2 class="menu__title">M E N U</h2>
+      <section class="projeto">
+         <form class="projeto__form" action="#" method="post">
+
+            <h2 class="projeto__form__title">Meu Projeto</h2>
+            <input class="projeto__form__nome-projeto" type="text" placeholder="Nome do projeto">
+            <textarea class="projeto__form__descricao-projeto" rows="5" placeholder="Descrição do projeto"></textarea>
+    
+            <h2 class="projeto__form__title">Personalização</h2>
+            <div class="projeto__form__flexbox-prog-cor">
+               <select class="projeto__form__linguagem">
+                  <option value="ASP">ASP</option>
+                  <option value="ActionScript">ActionScript</option>
+                  <option value="C/C++">C / C++</option>
+                  <option value="C#">C#</option>
+                  <option value="Pascal/Object Pascal">Pascal / Object Pascal</option>
+                  <option value="Euphoria">Euphoria</option>
+                  <option value="Java">Java</option>
+                  <option value="JavaScript" selected>JavaScript</option>
+                  <option value="Lua">Lua</option>
+                  <option value="MATLAB">MATLAB</option>
+                  <option value="PHP">PHP</option>
+                  <option value="Python">Python</option>
+                  <option value="R">R</option>
+                  <option value="Ruby">Ruby</option>
+                  <option value="Tcl">Tcl</option>
+                  <option value="Basic/Visual Basic">Basic / Visual Basic</option>
+               </select>
+               <input class="projeto__form__color" type="color" value="#96B9FD"><br>
+            </div>
+
+            <input class="projeto__form__submit" type="submit" value="Salvar projeto">
+         </form>
       </section>
    </main>
+
+   <footer>
+      Editora Pedrão®
+   </footer>
    
    <script src="script/main.js"></script>
 </body>

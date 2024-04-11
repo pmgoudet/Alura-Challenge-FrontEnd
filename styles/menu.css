@@ -1,0 +1,43 @@
+.menu {
+   width: 25%;
+}
+
+.menu__title {
+   font-size: 12px;
+   font-weight: 400;
+   padding: 8px 0;
+   letter-spacing: 2px;
+}
+
+.menu__lista__item {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   padding: 8px 0;
+}
+
+.menu__lista__item__text {
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.menu__lista__item-comunidade {
+   opacity: 56%;
+}
+
+
+
+@media (max-width: 1170px) {
+
+   .menu {
+      display: none;
+   }
+
+}
+
+@media (max-width: 560px) {
+
+
+
+}

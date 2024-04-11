@@ -1,0 +1,114 @@
+.projeto {
+   width: 25%;
+}
+
+.projeto__form__title {
+   font-size: 12px;
+   font-weight: 400;
+   padding: 8px 0;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.projeto__form__nome-projeto,
+.projeto__form__descricao-projeto {
+   background-color: var(--form);
+   margin: 8px 0;
+   padding: 16px;
+   border-radius: 10px;
+   border: none;
+   width: calc(100% - 32px);
+}
+
+.projeto__form__descricao-projeto {
+   margin-bottom: 32px;
+}
+
+.projeto__form__nome-projeto::placeholder,
+.projeto__form__descricao-projeto::placeholder {
+   color:var(--form-font);
+   font-size: 14px;
+}
+
+.projeto__form__nome-projeto:focus,
+.projeto__form__descricao-projeto:focus {
+   outline: none;
+}
+
+.projeto__form__nome-projeto:hover,
+.projeto__form__descricao-projeto:hover,
+.projeto__form__linguagem:hover {
+   background-color: var(--form-hover);
+}
+
+.projeto__form__linguagem {
+   background-color: var(--form);
+   margin: 8px 0;
+   padding: 16px;
+   border-radius: 10px;
+   border: none;
+   width: 100%;
+   color: var(--form-font);
+   font-size: 14px;
+}
+
+.projeto__form__linguagem option {
+   background-color: #051d3be8;
+   font-size: 14px;
+}
+
+
+.projeto__form__color {
+   background-color: var(--main-color);
+   width: 100%;
+   height: 56px;
+   margin: 8px 0;
+   padding: 4px 5px;
+   border-radius: 10px;
+   border: solid 1px white;
+}
+
+.projeto__form__color:hover {
+   background-color: #083164;
+}
+
+.projeto__form__color::-webkit-color-swatch {
+   border-radius: 4px;
+   border: none;
+}
+
+.projeto__form__submit {
+   background-color: var(--second-color);
+   height: 52px;
+   width: 100%;
+   margin: 32px 0;
+   border-radius: 10px;
+   border: none;
+   color: var(--main-color);
+   font-weight: 400;
+}
+
+.projeto__form__submit:hover {
+   background-color: var(--third-color);
+}
+
+
+@media (max-width: 1170px) {
+
+   .projeto {
+      width: 100%;
+      margin-top: 40px;
+   }
+
+   .projeto__form__flexbox-prog-cor {
+      display: flex;
+      gap: 16px;
+   }
+
+}
+
+@media (max-width: 560px) {
+
+
+
+}

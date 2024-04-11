@@ -1,13 +1,9 @@
 .header {
-   margin: 32px;
+   margin: 32px 32px 40px 32px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    gap: 30px;
-}
-
-.header__logo-container {
-   width: 180px;
 }
 
 .header__logo {
@@ -17,9 +13,9 @@
 
 .header__busca {
    background-color: var(--form);
-   width: 720px;
+   min-width: 720px;
    padding: 16px;
-   border-radius: 5px;
+   border-radius: 10px;
    border: none;
 }
 
@@ -28,7 +24,7 @@
 }
 
 .header__busca::placeholder {
-   color: var(--form-font)
+   color: var(--form-font);
 }
 
 .header__busca:hover {
@@ -40,7 +36,6 @@
 }
 
 .header__usuario {
-   width: 180px;
    display: flex;
    gap: 8px;
    align-items: center;
@@ -51,8 +46,26 @@
    display: none;
 }
 
-@media (max-width: 992px) {
 
+/***********************************************/
+
+
+@media (max-width: 1170px) {
+
+   .header {
+      align-items: center;
+      gap: 30px;
+   }
+
+   .header__busca {
+      min-width: 0;
+      width: 70%;
+   }
+
+   .header__usuario {
+      justify-content: center;
+   }
+   
    .header__usuario__foto {
       display: none;
    }
@@ -67,6 +80,10 @@
    }
 
 }
+
+
+/***********************************************/
+
 
 @media (max-width: 560px) {
 
