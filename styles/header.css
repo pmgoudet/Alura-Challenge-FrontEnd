@@ -11,6 +11,10 @@
    min-width: 129px;
 }
 
+.header__logo-container {
+   width: 25%;
+}
+
 .header__busca {
    background-color: var(--form);
    min-width: 720px;
@@ -36,6 +40,7 @@
 }
 
 .header__usuario {
+   width: 25%;
    display: flex;
    gap: 8px;
    align-items: center;
