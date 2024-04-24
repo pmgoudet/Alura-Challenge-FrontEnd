@@ -10,15 +10,38 @@
 
 <body>
 
-   <header class="header">
-      <div class="header__logo-container"><img class="header__logo" src="assets/img/Logo.png" alt="Logotipo da Alura Dev"></div>
       <input class="header__busca" type="text" placeholder="Busque por algo">
       <div class="header__usuario">
          <img class="header__usuario__foto" src="assets/img/Photo.png" alt="Foto do usuário">
          <p class="header__usuario__nome">Pedro</p>
          <span class="header__busca__icon material-symbols-outlined"> search </span>
          <span class="header__usuario__menu-icon material-symbols-outlined">menu</span>
+         <input class="header__busca" type="text" placeholder="Busque por algo">
+         <div class="header__usuario">
+            <img class="header__usuario__foto" src="assets/img/Photo.png" alt="Foto do usuário">
+            <p class="header__usuario__nome">Pedro</p>
+            <span class="header__busca__icon material-symbols-outlined"> search </span>
+            <span class="header__usuario__menu-icon material-symbols-outlined">menu</span>
+         </div>
+         <div class="header__barra-checkbox">
+            <ul class="menu__lista">
+               <li class="menu__lista__item menu__lista__item-editor">
+                  <a class="menu__lista__item__icon" href="#"><img src="assets/img/menu__lista__icon1.png" alt="Ícone Editor de Código"></a>
+                  <a class="menu__lista__item__text" href="#">Editor de código</a>
+               </li>
+               <li class="menu__lista__item menu__lista__item-comunidade">
+                  <a class="menu__lista__item__icon" href="#"><img src="assets/img/menu__lista__icon2.png" alt="Ícone Comunidade"></a>
+                  <a class="menu__lista__item__text" href="#">Comunidade</a>
+               </li>
+            </ul>
+            <div class="linha-divisoria-checkbox"></div>
+            <div class="header__usuario-checkbox">
+               <img class="header__usuario__foto-checkbox" src="assets/img/Photo.png" alt="Foto do usuário">
+               <p class="header__usuario__nome-checkbox">Pedro</p>
+            </div>
+         </div>
       </div>
+      <input class="header__busca-lupa" type="text" placeholder="Busque por algo">
    </header>
 
    <main class="corpo">
@@ -57,24 +80,11 @@
             <h2 class="projeto__form__title">Personalização</h2>
             <div class="projeto__form__flexbox-prog-cor">
                <select class="projeto__form__linguagem">
-                  <option value="ASP">ASP</option>
-                  <option value="ActionScript">ActionScript</option>
-                  <option value="C/C++">C / C++</option>
-                  <option value="C#">C#</option>
-                  <option value="Pascal/Object Pascal">Pascal / Object Pascal</option>
-                  <option value="Euphoria">Euphoria</option>
-                  <option value="Java">Java</option>
+                  <option value="HTML">HTML</option>
+                  <option value="CSS">CSS</option>
                   <option value="JavaScript" selected>JavaScript</option>
-                  <option value="Lua">Lua</option>
-                  <option value="MATLAB">MATLAB</option>
-                  <option value="PHP">PHP</option>
-                  <option value="Python">Python</option>
-                  <option value="R">R</option>
-                  <option value="Ruby">Ruby</option>
-                  <option value="Tcl">Tcl</option>
-                  <option value="Basic/Visual Basic">Basic / Visual Basic</option>
                </select>
-               <input class="projeto__form__color" type="color" value="#96B9FD"><br>
+               <input class="projeto__form__color" type="color" value="#96B9FD">
             </div>
 
             <input class="projeto__form__submit" type="submit" value="Salvar projeto">
@@ -82,9 +92,6 @@
       </section>
    </main>
 
-   <footer>
-      Editora Pedrão®
-   </footer>
    
    <script src="script/main.js"></script>
 </body>

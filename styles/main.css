@@ -81,6 +81,9 @@
 
 @media (max-width: 560px) {
 
-
+   .corpo {
+      margin: 32px 16px;
+   }
+   
 
 }
