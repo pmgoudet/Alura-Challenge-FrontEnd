@@ -1,0 +1,176 @@
+.header {
+   margin: 32px 32px 40px 32px;
+   display: grid;
+   grid-template-columns: auto 50% auto;
+   justify-content: space-between;
+   align-items: center;
+   gap: 30px;
+}
+
+.header__logo {
+   min-height: 31px;
+   min-width: 129px;
+}
+
+/* .header__logo-container {
+   width: 25%;
+} */
+
+.header__busca,
+.header__busca-lupa {
+   background-color: var(--form);
+   padding: 16px;
+   border-radius: 10px;
+   border: none;
+}
+
+/* .header__busca {
+   min-width: 720px;
+} */
+
+.header__busca__icon {
+   display: none;
+}
+
+.header__busca-lupa {
+   display: none;
+}
+
+.header__busca::placeholder,
+.header__busca-lupa::placeholder {
+   color: var(--form-font);
+}
+
+.header__busca:hover,
+.header__busca-lupa:hover {
+   background-color: var(--form-hover);
+}
+
+.header__busca:focus,
+.header__busca-lupa:focus {
+   outline: none;
+}
+
+.header__usuario {
+   /* width: 25%; */
+   display: flex;
+   gap: 8px;
+   align-items: center;
+   justify-content: right;
+}
+
+.header__usuario__menu-icon {
+   display: none;
+}
+
+.header__barra-checkbox {
+   display: none;
+   opacity: 0;
+}
+
+
+/***********************************************/
+
+
+@media (max-width: 1170px) {
+
+   .header {
+      align-items: center;
+      gap: 30px;
+   }
+
+   .header__logo-container {
+      width: auto;
+   }
+
+   .header__busca {
+      min-width: 0;
+      width: 70%;
+   }
+
+   .header__usuario {
+      justify-content: right;
+      width: auto;
+   }
+   
+   .header__usuario__foto {
+      display: none;
+   }
+
+   .header__usuario__nome {
+      display: none;
+   }
+
+   .header__usuario__menu-icon {
+      display: block;
+      font-size: 30px;
+      font-weight: 600;
+   }
+
+   .header__barra-checkbox {
+      background-color: #2D415B;
+      position: fixed;
+      top: 105px;
+      right: 31px;
+      z-index: 1;
+      padding: 16px;
+      height: 100%;
+      border-radius: 10px;
+      opacity: 1;
+   }
+
+   .header__usuario-checkbox {
+      display: flex;
+      margin: 36px 10px;
+      align-items: center;
+      gap: 16px;
+   }
+
+   .linha-divisoria-checkbox {
+      height: 1px;
+      background-color: white;
+      opacity: 60%;
+      justify-content: center;
+      margin: 10px auto;
+   }
+
+   .header__barra-checkbox {
+      top: 102px;
+      right: 16px;
+   }
+
+}
+
+
+/***********************************************/
+
+
+@media (max-width: 560px) {
+
+   .header {
+      margin: 32px  16px;
+   }
+
+   .header__busca {
+      display: none;
+   }
+
+   .header__busca-lupa {
+      display: none;
+      width: calc(100% - 64px);
+      margin: auto;
+   }
+   
+   .header__busca__icon {
+      display: block;
+      font-size: 30px;
+      font-weight: 700;
+   }
+
+   .header__usuario {
+      gap: 30px;
+   }
+
+
+
+}

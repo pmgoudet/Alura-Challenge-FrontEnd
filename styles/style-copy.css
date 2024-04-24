@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url(header-copy.css);
+@import url(menu.css);
+@import url(main.css);
+@import url(seu-projeto.css);
+@import url(footer.css);
+
+:root {
+   --main-color: #051D3B;
+   --second-color: #5081FB;
+   --third-color: #7BA4FC;
+   --fourth-color: #96B9FD;
+   --code-area-color: #141414;
+   --form: rgba(255, 255, 255, 0.16); /* DELETAR ISSO */
+   --form-hover: rgba(255, 255, 255, 0.24); /* DELETAR ISSO */
+   --form-font: rgba(255, 255, 255, 0.64); /* DELETAR ISSO */
+   --main-font: 'inter', sans-serif;
+   --font-code-area: 'Roboto Mono', monospace;
+}
+
+* {
+   font-family: var(--main-font);
+   color: white;
+   font-size: 16px;
+   font-weight: 300;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: var(--main-color); 
+   max-width: 1440px;
+   margin: auto;
+}
+
+img {
+   width: auto;
+   height: 100%;
+   max-width: 100%;
+   max-height: 100%;
+}
+
